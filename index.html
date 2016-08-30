@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+    <head>
+        <title>Practice</title> 
+        
+        <style>
+          #gradient {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(#900, #200);
+            float: left;
+        }  
+            
+            @keyframes example {
+            0% {
+                background-color: rebeccapurple;
+            }
+            25% {
+                background-color: darkgoldenrod;
+            }
+            50% {
+                background-color: darkorange;
+            }
+            100% {
+                background-color: orangered;
+            }
+        }
+        
+        #keyframe {
+            width: 300px;
+            height: 300px;
+            margin-left: 10px;
+            float: left;
+            background-color: rebeccapurple;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+            animation-timing-function: ease-in-out;
+        }
+            
+        #scale {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(254,196,51);
+            float: left;
+            margin-left: 10px;
+            box-shadow: 10px 10px 5px #888888;
+            -webkit-transition: width 2s, height 4s;
+            /* For Safari 3.1 to 6.0 */
+            transition: width 2s, height 4s;
+        }
+        
+        #scale:hover {
+            width: 300px;
+            height: 300px;
+        }
+            
+        p {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: darkcyan;
+            float: left;
+            clear: both;
+        }
+        </style>    
+    </head>
+    
+    <body>
+        
+        <div id="gradient"></div>
+        <div id="keyframe"></div>
+        <div id="scale"></div>
+        <p>Hello World!</p>
+        
+    </body>    
+    
+</html>  
